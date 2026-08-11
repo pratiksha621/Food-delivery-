@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Midland | Contact</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f5f4;
+            color: #555;
+        }
+
+        /* Navbar */
+
+        .navbar {
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            color: #d59178;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #555;
+        }
+
+        .nav-link:hover {
+            color: #d27d5e;
+        }
+
+        /* Contact Hero */
+
+        .contact-hero {
+            height: 400px;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.35),
+                    rgba(0,0,0,0.35)
+                ),
+                url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
+                center/cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .contact-hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .contact-hero p {
+            font-size: 17px;
+        }
+
+        /* Contact Form */
+
+        .contact-section {
+            padding: 60px 20px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .contact-box h2 {
+            color: #53687d;
+            margin-bottom: 25px;
+        }
+
+        .form-control {
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .send-btn {
+            background: #d9967d;
+            color: white;
+            border: none;
+
+            padding: 12px 30px;
+            border-radius: 8px;
+        }
+
+        .send-btn:hover {
+            background: #c6795f;
+            color: white;
+        }
+
+        /* Contact Information */
+
+        .info-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .icon {
+            font-size: 28px;
+            margin-right: 15px;
+        }
+
+        .info-item h5 {
+            color: #53687d;
+        }
+
+        .info-item p {
+            color: #888;
+            margin-left: 45px;
+        }
+
+        /* Map */
+
+        .map {
+            width: 100%;
+            height: 220px;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        /* Mobile */
+
+        @media(max-width:768px) {
+
+            .contact-hero {
+                height: 320px;
+            }
+
+            .contact-hero h1 {
+                font-size: 34px;
+            }
+
+            .contact-section {
+                padding: 40px 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+        <a href="index.html"
+           class="navbar-brand logo">
+
+            🍴 Midland
+
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            ☰
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="menu.html">
+                        Menu
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="login.html">
+                        Sign In
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="cart.html">
+                        🛒 Cart
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= CONTACT HERO ================= -->
+
+<section class="contact-hero">
+
+    <div>
+
+        <h1>Get in Touch</h1>
+
+        <p>
+            We'd love to hear from you!
+        </p>
+
+        <p>
+            Have a question about our menu, pricing,
+            or anything else? We're ready to help.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-section">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <!-- Contact Form -->
+
+            <div class="col-lg-7">
+
+                <div class="contact-box">
+
+                    <h2>
+                        Send us a Message
+                    </h2>
+
+
+                    <form>
+
+
+                        <!-- Name -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Name
+                            </label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="Pratiksha"
+                                   required>
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Email
+                            </label>
+
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Pratiksha10@gmailS.com"
+                                   required>
+
+                        </div>
+
+                  <!-- Message -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Message
+                            </label>
+
+                            <textarea class="form-control"
+                                      rows="6"
+                                      placeholder="Write your message here..."
+                                      required></textarea>
+
+                        </div>
+
+
+                        <button type="submit"
+                                class="send-btn">
+
+                            Send Message →
+
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Information -->
+
+            <div class="col-lg-5">
+
+                <div class="info-box">
+
+                    <h2>
+                        Contact Information
+                    </h2>
+
+
+                    <!-- Address -->
+
+                    <div class="info-item">
+
+                        <h5>
+                            <span class="icon">📍</span>
+                            Address
+                        </h5>
+
+                        <p>
+                            Near bus stand ,<br>
+                              islampur
+                        </p>
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="info-item">
+
+                        <h5>
+                            <span class="icon">📞</span>
+                            Phone
+                        </h5>
+
+                        <p>
+                            +91 7076793772
+                        </p>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="info-item">
+
+                        <h5>
+                            <span class="icon">✉️</span>
+                            Email
+                        </h5>
+
+                        <p>
+                            Midland@gmail.com
+                        </p>
+
+                    </div>
+
+
+                    <!-- Opening Hours -->
+
+                    <div class="info-item">
+
+                        <h5>
+                            <span class="icon">🕐</span>
+                            Opening Hours
+                        </h5>
+
+                        <p>
+                            Monday - Sunday<br>
+                            10:00 AM - 11:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+            </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p class="mb-0">
+        © 2026 FlavorQuest. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>
